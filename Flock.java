@@ -2,7 +2,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Flock extends Bird{
+public class Flock{
 
     ArrayList<Bird> f = new ArrayList<>();
     public Flock(){
@@ -19,9 +19,11 @@ public class Flock extends Bird{
             num = sc.nextInt();
         }
     }
+
     public void draw (Graphics g) {
         for (Bird bird : f) {
             bird.draw(g);
         }
     }
+
 }
